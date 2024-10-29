@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warning Alert Page</title>
+    <style>
+        /* Style the warning message */
+        #warningMessage {
+            display: none;
+            color: red;
+            background-color: black;
+            text-align: center;
+            font-size: 2em;
+            padding: 20px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            border: 2px solid red;
+            box-shadow: 0px 0px 15px red;
+        }
+    </style>
+</head>
+<body>
+    <!-- The link to trigger the alert -->
+    <a href="#" onclick="showWarning()">Click here</a>
+
+    <!-- Warning Message Box -->
+    <div id="warningMessage">WARNING ALERT</div>
+
+    <script>
+        function showWarning() {
+            // Show alert messages
+            alert("YOUR DATA IS GETTING COPIED!!....");
+            alert("PLEASE WAIT FOR A WHILE...");
+
+            // Display the warning message
+            document.getElementById("warningMessage").style.display = "block";
+        }
+    </script>
+</body>
+</html>
